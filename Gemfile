@@ -43,5 +43,6 @@ group :development, :test do
   gem 'spring'
     
     gem 'materialize-sass'
+    gem 'devise', '~> 3.5', '>= 3.5.3'
 end
 
