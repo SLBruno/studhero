@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stud</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+    </head>
+    <body> 
+        <header>
+            <nav class=" brown lighten-2 z-depth-2">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="#!" class="brand-logo">STUD</a>
+                        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="sass.html">Courses</a></li>
+                            <li><a href="badges.html">Sign up</a></li>
+                            <li><a href="collapsible.html">Login</a></li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                        <li><a href="sass.html">Sass</a></li>
+                        <li><a href="badges.html">Components</a></li>
+                        <li><a href="collapsible.html">Javascript</a></li>
+                        <li><a href="mobile.html">Mobile</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+    <%= yield %>
+        </main>
+        <footer> 
+            <footer class="page-footer brown lighten-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col l6 s12">
+                            <h5 class="white-text">Stud</h5>
+                            <p class="grey-text text-lighten-4">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."</p>
+                        </div>
+                        <div class="col l4 offset-l2 s12">
+                            <h5 class="white-text">Social</h5>
+                            <ul>
+                              <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+                              <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                              <li><a class="grey-text text-lighten-3" href="#!">Google Plus</a></li>
+                              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <div class="container">
+                        © 2014 Copyright Text
+                        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                        <%= link_to "About Us", pages_about_path, :class => "grey-text text-ligthen-2" %>
+                    </div>
+                </div>
+            </footer>
+    
+    <script>
+     $(".button-collapse").sideNav();
+    </script>
+
+</body>
+</html>
